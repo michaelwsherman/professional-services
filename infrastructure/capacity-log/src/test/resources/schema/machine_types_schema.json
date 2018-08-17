@@ -1,0 +1,88 @@
+{
+  "fields": [
+    {
+      "name": "shared_cpu",
+      "type": {
+        "equivalent": "BOOL",
+        "constant": "BOOLEAN"
+      }
+    },
+    {
+      "name": "cpus",
+      "type": {
+        "equivalent": "INT64",
+        "constant": "INTEGER"
+      }
+    },
+    {
+      "name": "kind",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    },
+    {
+      "name": "description",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    },
+    {
+      "name": "self_link",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    },
+    {
+      "name": "memory_mb",
+      "type": {
+        "equivalent": "INT64",
+        "constant": "INTEGER"
+      }
+    },
+    {
+      "name": "max_persistent_disks",
+      "type": {
+        "equivalent": "INT64",
+        "constant": "INTEGER"
+      }
+    },
+    {
+      "name": "max_persistent_disk_size_gb",
+      "type": {
+        "equivalent": "INT64",
+        "constant": "INTEGER"
+      }
+    },
+    {
+      "name": "zone",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    },
+    {
+      "name": "creation_timestamp",
+      "type": {
+        "equivalent": "TIMESTAMP",
+        "constant": "TIMESTAMP"
+      }
+    },
+    {
+      "name": "name",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    },
+    {
+      "name": "project_id",
+      "type": {
+        "equivalent": "STRING",
+        "constant": "STRING"
+      }
+    }
+  ]
+}
