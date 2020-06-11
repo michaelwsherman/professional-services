@@ -1,7 +1,7 @@
 ## Indexing documents into Elasticsearch using Cloud Dataflow
 This example Cloud Dataflow pipeline demonstrates the process of reading JSON documents from Cloud Pub/Sub, enhancing the document using metadata stored in Cloud Bigtable and indexing those documents into [Elasticsearch](https://www.elastic.co/). The pipeline also validates the documents for correctness and availability of metadata and publishes any documents that fail validation into another Cloud Pub/Sub topic for debugging and eventual reprocessing.
 
-### Workflow Overview 
+### Workflow Overview
 
 ***
 
@@ -113,7 +113,7 @@ mvn compile exec:java -Dexec.mainClass=com.google.cloud.pso.IndexerMain -Dexec.a
 --instanceId=[BIGTABLE_INSTANCE_ID] \
 --tableName=[BIGTABLE_TABLE_NAME] \
 --columnFamily=[BIGTABLE_COLUMN_FAMILY] \
---columnQualifier=[BIGTABLE_COLUMN_QUALIFIER]
+--columnQualifier=[BIGTABLE_COLUMN_QUALIFIER]"
 ```
 
 ***

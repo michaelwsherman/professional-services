@@ -16,7 +16,7 @@ Here is an example of querying data that has been exported by this tool into Big
 
 ```
 $ bq query 'SELECT * FROM gke_billing.billing LIMIT 10'
-Waiting on bqjob_r3e0b632863ac23dc_0000016555efd3fa_1 ... (0s) Current status: DONE   
+Waiting on bqjob_r3e0b632863ac23dc_0000016555efd3fa_1 ... (0s) Current status: DONE
 +---------------------+---------------------------+------------------+-------------+----------------------+------------------------------------------------------------+--------------+--------------+----------+-----------+
 |      timestamp      |          project          |     cluster      |  namespace  |    serviceaccount    |                            pod                             | reserved_cpu | reserved_ram | used_cpu | used_ram  |
 +---------------------+---------------------------+------------------+-------------+----------------------+------------------------------------------------------------+--------------+--------------+----------+-----------+
@@ -37,7 +37,7 @@ $ bq query 'SELECT project, cluster, namespace, SUM(reserved_ram) AS reserved_ra
             GROUP BY project, cluster, namespace
             HAVING namespace != "kube-system"
             ORDER BY reserved_ram desc'
-Waiting on bqjob_r9b4447e01a43528_00000165561be752_1 ... (0s) Current status: DONE   
+Waiting on bqjob_r9b4447e01a43528_00000165561be752_1 ... (0s) Current status: DONE
 +------------------------------+------------------+-------------+--------------+--------------+
 |           project            |     cluster      |  namespace  | reserved_ram | reserved_cpu |
 +------------------------------+------------------+-------------+--------------+--------------+
@@ -50,7 +50,7 @@ Waiting on bqjob_r9b4447e01a43528_00000165561be752_1 ... (0s) Current status: DO
 
 # Installation
 
-This job is available on the public docker hub at `dparrish/gke-billing-export:1.0.0`, but the following instructions
+This job is available on the public docker hub at `dparrish/gke-billing-export:1.0.1`, but the following instructions
 include building a local version.
 
 ## Download

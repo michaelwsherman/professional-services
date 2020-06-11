@@ -36,10 +36,10 @@ from constants import constants
 
 def initialise_params():
     """Parses all arguments and assigns default values when missing.
-    
+
     Convert argument strings to objects and assign them as attributes of the
     namespace.
-    
+
     Returns:
         An object containing all the parsed arguments for script to use.
     """
@@ -300,15 +300,15 @@ def generate_mean_std(client, parameters):
 
     with file_io.FileIO(
         parameters.mean_path,
-        mode='w+'
+        mode='wb+'
     ) as f:
-        pickle.dump(mean, f)
+        pickle.dump(mean, f, protocol=2)
 
     with file_io.FileIO(
         parameters.std_path,
-        mode='w+'
+        mode='wb+'
     ) as f:
-        pickle.dump(std, f)
+        pickle.dump(std, f, protocol=2)
 
 
 def main():
